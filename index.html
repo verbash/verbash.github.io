@@ -1,53 +1,99 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
-  <meta charset="UTF-8">
-  <title>portfolio-about-me</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <!-- <style>
+        body {background-image: url("..assets/images/white-waves.png");}
+        </style> -->
+        <title>portfolio-about-me</title>
+    </head>
 
-
-</head>
-<body>
+<!-- set background image    -->
+    <body style="background-image: url(assets/images/white-waves.png)">
 <!--name and nav bar-->
-<header>
-    <div id="name-box"><h1>David LiaBraaten</h1> 
-    
-    </div>
 
-    <div id="nav-container">
-        <a href="index.html">About</a> |
-        <a href="portfolio.html">Portfolio</a> |
-        <a href="contact.html">Contact</a>
-    </div>
-</header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-teal" style="background-color:#4aaaa5";>
+        <!-- brand -->
+            <a class="navbar-brand" href="index.html">David LiaBraaten</a>
+      
+        <!-- toggler/collapsibe button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+      
+        <!-- navbar links -->
+ 
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    </li> 
+                </ul>
+            </div> 
+        </nav>
 
 
 
 <!--bottom portion-->
-<div class="wrapper">
 
-    <div class="container">
-     
+<!-- build bootstrap grid: 4 rows, 2 columns -->
 
-        <div id="biotext">
-            <div id="biopic">
-                <img src="assets/images/DavidLiaBraatenMug.jpg"/ alt="David LiaBraaten picture" width="200px"/>
+        <div class="container">
+            <div class="row"><br></div>
+            <div class="row">
+                <div class="col-md-4 col-xs-12"><img src="assets/images/DavidLiaBraatenMug.jpg"/ alt="David LiaBraaten picture" width="200px" padding="20px"/>
+                </div>
+                <div class="col-md-8 col-xs-6">
+                        <p>My name is David LiaBraaten, nice to meet you!  Born in Hawaii to a nightclub singer and a restaurant manager-turned computer programmer, I have a knack for music, customer service and AV media technologies.   </p> 
+                        <p> Currently I am Store Manager at Guitar Center in Clackamas Oregon.  My background is in live sound/lighting tech and audio post-production.   I am currently studying at the U of O Coding Bootcamp for a future career in Web Development and eCommerce. </p> 
+                        <p>My wife is a bench-jeweler and graphic designer and my 2-year old daughter is both a doctor and a princess.</p>
+                </div>
             </div>
-
-           <p>My name is David LiaBraaten, nice to meet you!  Born in Hawaii to a nightclub singer and a restaurant manager-turned computer programmer, I have a knack for music, customer service and AV media technologies.   </p> <p> Currently I am Store Manager at Guitar Center in Clackamas Oregon.  My background is in live sound/lighting tech and audio post-production.   I am currently studying at the U of O Coding Bootcamp for a future career in Web Development and eCommerce. 
-        </p><p>My wife is a bench-jeweler and graphic designer and my 2-year old daughter is both a doctor and a princess.</p>
-
-
+            <div class="row"><br>3<br></div>
+            <div class="row"><br>4<br></div>
         </div>
-    </div>
-</div>
 
-<footer>
-<p>copyright &copy;</p>
 
-</footer>
 
-</body>
+
+
+            <!-- <div class="wrapper">
+
+                <div class="container">
+                
+
+                    <div id="biotext">
+                        <div id="biopic">
+                            <img src="assets/images/DavidLiaBraatenMug.jpg"/ alt="David LiaBraaten picture" width="200px"/>
+                        </div>
+
+                    <p>My name is David LiaBraaten, nice to meet you!  Born in Hawaii to a nightclub singer and a restaurant manager-turned computer programmer, I have a knack for music, customer service and AV media technologies.   </p> <p> Currently I am Store Manager at Guitar Center in Clackamas Oregon.  My background is in live sound/lighting tech and audio post-production.   I am currently studying at the U of O Coding Bootcamp for a future career in Web Development and eCommerce. 
+                    </p><p>My wife is a bench-jeweler and graphic designer and my 2-year old daughter is both a doctor and a princess.</p>
+
+
+                    </div>
+                </div>
+            </div> -->
+
+<!-- footer element -->
+
+        <footer>
+            <p>copyright &copy;</p>
+
+        </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>    
+    </body>
 </html>
