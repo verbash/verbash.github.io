@@ -1,0 +1,8 @@
+
+
+
+
+.profile-pic {
+    opacity: 0.85 !important;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
